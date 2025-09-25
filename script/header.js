@@ -1,3 +1,5 @@
+const playerOvereating = {};
+
 const BLOCK_COAL = Block.createSpecialType({
 	solid: true,
 	renderlayer: EBlockRenderLayer.BLEND,
@@ -20,3 +22,14 @@ const translate = function(str, args) {
 		return "" + str;
 	}
 };
+
+const negativeEffect = [
+    { effect: EPotionEffect.BLINDNESS},
+    { effect: EPotionEffect.CONFUSION},
+    { effect: EPotionEffect.DIG_SLOWDOWN},
+    { effect: EPotionEffect.HUNGER},
+    { effect: EPotionEffect.MOVEMENT_SLOWDOWN},
+    { effect: EPotionEffect.POISON},
+    { effect: EPotionEffect.WEAKNESS},
+    { effect: EPotionEffect.WITHER}
+];
